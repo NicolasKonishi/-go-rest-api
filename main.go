@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println("iniciando server...http://localhost:8080/")
+	fmt.Println("iniciando serveer...http://localhost:8080/")
 	routes.HandleRequest()
 }
