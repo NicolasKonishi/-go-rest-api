@@ -12,7 +12,9 @@ import (
 func Home(w http.ResponseWriter, req *http.Request) {
 	fmt.Fprintf(w, "Home Page")
 }
+
 func AllPersonas(w http.ResponseWriter, req *http.Request) {
+	//w.Header().Set("Content-Type", "application/json") -> identifique que o writer irá ser do tipo json
 	var p []models.Personalidades
 	//DB.Find(&p) -> encontra no endereço de memória a var ps
 	database.DB.Find(&p)
