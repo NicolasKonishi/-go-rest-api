@@ -8,7 +8,7 @@ export default class Personalidades extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:8000/api/personalidades')
+        axios.get('http://localhost:8080/api/personas')
             .then(res => {
                 const personalidades = res.data;
                 this.setState({ personalidades })
